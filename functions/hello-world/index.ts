@@ -7,7 +7,7 @@ interface reqPayload {
 console.log('hello-world started');
 
 serve(async (req: Request) => {
-  const { name } : reqPayload = await req.json();
+  const { name } : reqPayload = await req.text();
   const data = {
     message: `Hello ${name} from Supabase Edge Functions!`,
   }
