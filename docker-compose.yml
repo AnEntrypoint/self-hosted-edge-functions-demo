@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   web:
+    entrypoint: /bin/bash
     build: .
     volumes:
       - type: bind
