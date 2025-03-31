@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    entrypoint: sh pause
+    entrypoint: ["sh", "-c", "echo 'Container started. Pausing...'; sleep infinity"]
     build: .
     volumes:
       - type: bind
