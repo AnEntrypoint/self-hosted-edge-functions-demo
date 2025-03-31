@@ -9,6 +9,6 @@ console.log('hello-world started');
 serve(async (req: Request) => {
   return new Response(
         JSON.stringify({ msg: 'hi'}),
-        { status: 401, headers: { "Content-Type": "application/json" } },
+        { status: 200, headers: { "Content-Type": "application/json" } },
       )
 }, { port: 9005 })
