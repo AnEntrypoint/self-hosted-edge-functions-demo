@@ -5,6 +5,6 @@ services:
     volumes:
       - type: bind
         source: ./functions
-        target: /home/deno
+        target: /home/deno/functions
     ports:
       - "8010:9000"
