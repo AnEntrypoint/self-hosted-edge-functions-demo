@@ -7,5 +7,8 @@ interface reqPayload {
 console.log('hello-world started');
 
 serve(async (req: Request) => {
-  return "HELLO WORLD"
+  return new Response(
+        JSON.stringify({ msg: 'hi'}),
+        { status: 401, headers: { "Content-Type": "application/json" } },
+      )
 }, { port: 9005 })
